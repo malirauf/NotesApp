@@ -1,21 +1,28 @@
-package com.dev.notesapp.ui.theme
+package com.dev.notesapp.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.dev.notesapp.R
 
-// Set of Material typography styles to start with
+private val Roboto = FontFamily(
+    Font(R.font.roboto_slab_bold),
+    Font(R.font.roboto_slab_regular),
+    Font(R.font.roboto_slab_medium),
+    Font(R.font.roboto_slab_light),
+)
+
 val Typography = Typography(
     body1 = TextStyle(
-        fontFamily = FontFamily.Default,
+        fontFamily = Roboto,
         fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
-    )
-    /* Other default text styles to override
+        fontSize = 30.sp
+    ),
     button = TextStyle(
-        fontFamily = FontFamily.Default,
+        fontFamily = Roboto,
         fontWeight = FontWeight.W500,
         fontSize = 14.sp
     ),
@@ -23,6 +30,10 @@ val Typography = Typography(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Normal,
         fontSize = 12.sp
+    ),
+    h5 = TextStyle(
+        fontFamily = Roboto,
+        fontWeight = FontWeight.Bold,
+        fontSize = 18.sp
     )
-    */
 )

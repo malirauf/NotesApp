@@ -1,4 +1,4 @@
-package com.dev.notesapp.ui.theme
+package com.dev.notesapp.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
